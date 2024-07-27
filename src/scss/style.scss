@@ -1,0 +1,19 @@
+@import 'components/vars';
+@import 'components/mixins';
+@import 'components/fonts';
+@import "components/keyframes";
+@import 'components/media';
+
+// reset
+@import 'components/reset';
+@import 'components/default';
+
+// vendors
+@import 'vendor/swiper-bundle';
+@import 'vendor/aos';
+
+// blocks
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/cards";

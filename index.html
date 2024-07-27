@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Gradient on Moving Text</title>
+    <style>
+        .header {
+            max-width: 500px;
+        }
+        .header .inner{
+            width: 140ch;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+            font-family: monospace;
+            display:block;
+            background: linear-gradient(90deg,#A5FBFF,#6C15FB);
+            background-position: 0 0, 0 0;
+            background-color: pink;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: move 1s linear infinite;
+            }
+
+@keyframes move {
+    to {
+        background-position: 100%, 0, 0 0;
+    }
+}
+
+body{
+  background:#000000;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre class="inner">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda qui tenetur est sapiente sed ipsam incidunt eveniet inventore magni.
+            </pre>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $white;
+	font-family: "Poppins", sans-serif;
+	background: linear-gradient(180.00deg, rgb(10, 3, 29), rgb(18, 7, 48) 100%);
+
+}
+
+
+a {
+	text-decoration: none;
+	list-style: none;
+	transition: .2s;
+}
+
+a:focus {
+	outline: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+h2 {
+	font-family: 'Conthrax', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.container {
+	padding: 0px 20px;
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+button, a.btn-link {
+	font-family: 'Conthrax', sans-serif;
+	padding: 10px 22px;
+	border: 1.7px solid rgba(255, 255, 255, 0.32);
+	border-radius: 169.7px;
+	background: rgba(18, 7, 48, 0.32);
+
+	color: $white;
+
+	font-size: 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	transition: .25s ease-in-out;
+
+	text-transform: uppercase;
+
+	svg {
+		fill: white;
+		transition: .25s ease-in-out;
+	}
+
+	&:hover {
+		color: rgb(18, 7, 48);
+		background-color: $white;
+		svg {
+			fill: #120730;
+		}
+	}
+}
